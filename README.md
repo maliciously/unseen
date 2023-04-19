@@ -2,9 +2,9 @@
 
 #### Essentially, my end goal is to make a website similar to Linktree or Taplink where users could create their own account and configure their own custom link-in-bio page. Feel free to
 
-#### here is an example of what a page may consist of:
+#### here is an example of what a page may look like:
 
-![Example Page](/images/mobile.PNG "My Page")
+<img src="./images/desktop.png"  width="25%" height="25%">
 
 ### To-do:
 
