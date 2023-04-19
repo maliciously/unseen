@@ -38,7 +38,23 @@ body {
 .name {
     font-size: 35px;
     margin-bottom: 20px;
-    text-shadow: #ffcef3 0px 0px 7px;
+    text-shadow: #ffcef35b 0px 0px 7px;
+}
+.link {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ea02ff;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+.link:hover {
+    text-shadow: #222020 0px 0px 10px;
+    transition: 0.7s;
+/*   make this link have a cool transition but not scale   */
+    transform: scale(1.1);
+    text-shadow: #ea02ff50 0px 0px 7px;
+
 }
 .contact-wrapper {
     display: flex;
@@ -64,7 +80,7 @@ body {
 .contact:hover {
     background-color: #332930;
     border: 2px solid #ffffff;
-    box-shadow: 0px 0px 7px 0px #ffcef35b;
+    box-shadow: 0px 0px 7px 0px #ea02ff50;
 
 }
 .icon {
