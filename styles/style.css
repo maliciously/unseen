@@ -59,6 +59,7 @@ body {
     background-color: #222020;
     cursor: pointer;
     text-decoration: none;
+    width: 150px;
 }
 .contact:hover {
     background-color: #332930;
@@ -69,7 +70,7 @@ body {
 .icon {
     width: 25px;
     height: 25px;
-    margin-right: 5px;
+    margin-right: 7px;
 }
 .tele, .github, .discord {
     color: #ea02ff;

@@ -1,6 +1,6 @@
 # Link In Bio Tool :link:
 
-#### Essentially, my end goal is to make a website similar to Linktree or Taplink where users could create their own account and configure their own custom link-in-bio page. Feel free to
+#### Essentially, my end goal is to make a website similar to Linktree or Taplink where users could create their own account and configure their own custom link-in-bio page. Open to suggestions.
 
 #### here is an example of what a page may look like:
 
