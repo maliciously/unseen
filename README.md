@@ -4,7 +4,7 @@
 
 #### here is an example of what a page may look like:
 
-<img src="https://i.imgur.com/3Sii95D.png"  width="25%" height="25%">
+<img src="https://i.imgur.com/3Sii95D.png">
 
 ### To-do:
 
