@@ -4,7 +4,7 @@
 
 #### here is an example of what a page may consist of:
 
-<img src="./images/desktop.png" alt="Example Page" width="480px" height="270px">
+![Example Page](/images/mobile.PNG "My Page")
 
 ### To-do:
 
