@@ -4,6 +4,7 @@
 }
 html {
     background-color: rgb(33,3,31);
+    overscroll-behavior: none;
 }
 body {
     background: rgb(33,3,31);
