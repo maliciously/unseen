@@ -2,6 +2,9 @@
     margin: 0;
     font-family: 'Roboto Mono', monospace;
 }
+html {
+    background-color: rgb(33,3,31);
+}
 body {
     background: rgb(33,3,31);
     background: linear-gradient(180deg, rgba(33,3,31,1) 0%, rgba(22,2,24,1) 53%, rgba(14,14,14,1) 100%);
