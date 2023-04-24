@@ -10,8 +10,7 @@ body {
     background: rgb(33,3,31);
     background: linear-gradient(180deg, rgba(33,3,31,1) 0%, rgba(22,2,24,1) 53%, rgba(14,14,14,1) 100%);
     color: #FFFFFF;
-    height: 100vh;
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,20 +65,21 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    margin-left: 0px;
 }
 .contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 10px 0px 10px 20px;
+    margin: 8px 8px 8px 8px;
     border-radius: 8px;
     padding: 10px;
     border: 2px solid #FFFFFF;
     background-color: #222020;
     cursor: pointer;
     text-decoration: none;
-    width: 150px;
+    min-width: 175px;
 }
 .contact:hover {
     background-color: #332930;
@@ -92,7 +92,7 @@ body {
     height: 25px;
     margin-right: 7px;
 }
-.tele, .github, .discord {
+.tele, .github, .discord, .email {
     color: #ea02ff;
 }
 .settings {
