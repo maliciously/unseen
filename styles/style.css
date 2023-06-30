@@ -1,121 +1,125 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto Mono', monospace;
 }
 html {
-    background-color: rgb(33,3,31);
+    background-color: black;
     overscroll-behavior: none;
 }
 body {
-    background: rgb(33,3,31);
-    background: linear-gradient(180deg, rgba(33,3,31,1) 0%, rgba(22,2,24,1) 53%, rgba(14,14,14,1) 100%);
-    color: #FFFFFF;
+    background-image: url("../images/L.jpg");
+    background-size: cover;
+    color: white;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
 }
 .page-wrapper {
-    min-height: 80%;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.motd {
-    font-size: 20px;
-    margin-bottom: 30px;
-    text-shadow: #ffcef3 0px 0px 7px;
+    max-width: 600px;
+    margin: auto;
 }
 .pfp {
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
     border-radius: 50%;
-    border: 7px solid #FFFFFF;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 15px 0px #ffcef35b;
+    border: 7px solid white;
+    margin-top: 75px;
+    box-shadow: 0px 0px 8px 0px white;
+    animation: dropDown 2s;
 }
 .name {
-    font-size: 35px;
-    margin-bottom: 20px;
-    text-shadow: #ffcef35b 0px 0px 7px;
+    font-size: 36px;
+    text-shadow: black 0px 0px 3px;
+    margin-bottom: 4px;
+    animation: dropDown 2s;
 }
+.motto {
+    text-shadow: black 0px 0px 3px;
+    margin-bottom: 16px;
+    animation: dropDown 2s;
+}
+.link-wrapper {
+    animation: slideUp 2s;
+
+}
+
 .link {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #ea02ff;
-    display: flex;
-    flex-direction: row;
+    font-size: 16px;
+    color: white;
+    text-shadow: black 0px 0px 3px;
     text-decoration: none;
+    display: inline-block;
 }
-.link:hover {
-    text-shadow: #222020 0px 0px 10px;
-    transition: 0.7s;
-/*   make this link have a cool transition but not scale   */
-    transform: scale(1.1);
-    text-shadow: #ea02ff50 0px 0px 7px;
 
+.link-wrapper:hover .fa-link,
+.link-wrapper:hover .link,
+.link-wrapper:hover .fa-link:hover,
+.link-wrapper:hover .link:hover {
+    color: red;
+    text-shadow: darkred 0px 0px 3px;
+    transition: 0.4s ease-in-out;
 }
-.contact-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-left: 0px;
-}
+
 .contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 8px 8px 8px 8px;
-    border-radius: 8px;
-    padding: 10px;
-    border: 2px solid #FFFFFF;
-    background-color: #222020;
-    cursor: pointer;
-    text-decoration: none;
-    min-width: 175px;
+    text-shadow: black 0px 0px 3px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    animation: slideUp 2s;
 }
-.contact:hover {
-    background-color: #332930;
-    border: 2px solid #ffffff;
-    box-shadow: 0px 0px 7px 0px #ea02ff50;
 
+.logo:hover {
+    color: red;
+    text-shadow: darkred 0px 0px 2px;
+    transition: 0.4s;
+    transform: scale(1.1);
 }
-.icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 7px;
-}
-.tele, .github, .discord, .email {
-    color: #ea02ff;
-}
-.settings {
-    font-size: 30px;
-    color: #FFFFFF;
-    margin-left: 20px;
-    cursor: pointer;
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    text-shadow: #ffcef3 0px 0px 2px;
-}
-.settings:hover {
-    transition: 0.9s;
-    transform: rotate(360deg);
-    text-shadow: #ffcef3 0px 0px 5px;
-}
-@media screen and (max-width: 550px) {
-    .contact-wrapper {
-      flex-direction: column;
-    }
-    .pfp {
-        width: 300px;
-        height: 300px;
-    }
+
+.logo {
+    color: white;
+    font-size: 36px;
+    margin-top: 0px;
+    transition: 0.2s;
   }
+
+  .copyright {
+    text-shadow: black 0px 0px 3px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 2s;
+  }
+@keyframes dropDown {
+    0% {
+        transform: translate3d(0, -175px, 0);
+        opacity: 0;
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+}
+@keyframes slideUp {
+    0% {
+        transform: translate3d(0, +175px, 0);
+        opacity: 0;
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
